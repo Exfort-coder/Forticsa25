@@ -23,7 +23,67 @@
 
     <!-- Konten Utama: Kontak -->
     <main>
-        <!-- Area kerja Mas Rizky -->
+        <section class="kontak-container">
+            <div class="kontak-header">
+                <h2>Hubungi Kami</h2>
+                <p>Punya pertanyaan, saran, atau ingin berkolaborasi? Kirimkan pesan melalui formulir di bawah ini!</p>
+            </div>
+
+            <div class="kontak-wrapper">
+                <!-- Informasi Kontak -->
+                <div class="kontak-info">
+                    <h3>Informasi Sekretariat</h3>
+                    <p>Silakan kunjungi atau hubungi kami melalui saluran resmi berikut:</p>
+                    
+                    <ul class="info-list">
+                        <li>
+                            <strong>📍 Alamat:</strong><br>
+                            Kampus Politeknik Negeri Cilacap, Jl. Dr. Soetomo No.1, Sidakaya, Cilacap Sel.
+                        </li>
+                        <li>
+                            <strong>📧 Email:</strong><br>
+                            forticsati2a@pnc.ac.id
+                        </li>
+                        <li>
+                            <strong>📞 WhatsApp:</strong><br>
+                            +62 812-3456-7890 (Humas Kelas)
+                        </li>
+                        <li>
+                            <strong>⏰ Jam Operasional:</strong><br>
+                            Senin - Jumat: 08.00 - 16.00 WIB
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Formulir Pesan -->
+                <form id="form-kontak" class="kontak-form">
+                    <h3>Kirim Pesan</h3>
+                    
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email / Kontak</label>
+                        <input type="text" id="email" name="email" placeholder="Contoh: email@domain.com atau No. HP" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subjek">Subjek Pesan</label>
+                        <input type="text" id="subjek" name="subjek" placeholder="Perihal pesan Anda" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
+                    </div>
+
+                    <button type="submit" id="tombol-kirim" class="btn-kirim">Kirim Pesan</button>
+                    <p id="notifikasi-form" class="notifikasi"></p>
+                </form>
+            </div>
+        </section>
     </main>
 
     <!-- Footer -->
