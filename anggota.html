@@ -9,10 +9,13 @@
 <body>
     <!-- Navbar -->
     <header class="navbar">
-        <h1 class="logo">Forticsa TI 2A</h1>
+        <div class="buat-logo">
+                <img src="image/forticsa.jpg" alt="Logo Forticsa" class="logo">
+                <span class="teks-logo">Forticsa</span>
+            </div>
         <nav>
             <ul class="menu">
-                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="index.html">Beranda</a></li>
                 <li><a href="anggota.html">Anggota</a></li>
                 <li><a href="kegiatan.html">Kegiatan</a></li>
                 <li><a href="kontak.html">Kontak</a></li>
@@ -22,8 +25,29 @@
     </header>
 
     <!-- Konten Utama: Anggota -->
-    <main>
+    <main class="halaman-anggota">
         <!-- Area kerja Mba Qiqi-->
+    <section class="anggota-header">
+        <h2>Daftar Anggota</h2>
+        <p>Klik salah satu kartu untuk melihat detail anggota.</p>
+        <input type="search" id="cari-anggota" placeholder="Cari nama anggota..." aria-label="Cari anggota" />
+    </section>
+
+    <section id="daftar-anggota" class="grid-anggota"></section>
+    <p id="anggota-kosong" class="anggota-kosong" hidden>Anggota tidak ditemukan.</p>
+
+    <div id="modal-anggota" class="modal" hidden>
+        <div class="modal-isi" role="dialog" aria-modal="true" aria-labelledby="modal-nama">
+            <button type="button" id="modal-tutup" class="modal-tutup" aria-label="Tutup">&times;</button>
+            <img id="modal-foto" class="modal-foto" src="" alt="" />
+            <h3 id="modal-nama"></h3>
+            <p id="modal-jabatan" class="modal-jabatan"></p>
+            <dl class="modal-detail">
+                <dt>NIM</dt><dd id="modal-nim"></dd>
+                <dt>Asal</dt><dd id="modal-asal"></dd>
+            </dl>
+        </div>
+    </div>
     </main>
 
     <!-- Footer -->
