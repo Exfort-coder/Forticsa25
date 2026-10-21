@@ -13,6 +13,59 @@ if (tombolTema) {
 
 // ==== Area Kerja Mas Igo (Beranda dan Kegiatan) dibawah ini ==== //
 
+// efek ketik jargon
+  const elemenJargon = document.querySelector('.jargon p');
+  if (elemenJargon) {
+    const teksAsli = elemenJargon.textContent;
+    elemenJargon.textContent = '';
+    let i = 0;
+
+    function ketikTeks() {
+      if (i < teksAsli.length) {
+        elemenJargon.textContent += teksAsli.charAt(i);
+        i++;
+        setTimeout(ketikTeks, 40); // Kecepatan ngetik (ms)
+      }
+    }
+    ketikTeks();
+  }
+
+  // animasi angka statistik
+  const statistikCards = document.querySelectorAll('.statistik-card h3');
+  let animated = false;
+
+  function jalankanCounter() {
+    statistikCards.forEach(card => {
+      const target = parseInt(card.textContent);
+      if (isNaN(target)) return;
+
+      let count = 0;
+      const increment = Math.ceil(target / 30);
+      const timer = setInterval(() => {
+        count += increment;
+        if (count >= target) {
+          card.textContent = card.textContent.includes('+') ? target + '+' : target;
+          clearInterval(timer);
+        } else {
+          card.textContent = count;
+        }
+      }, 50);
+    });
+  }
+
+  // Jalankan animasi statistik saat scroll sampai ke bagian statistik
+  window.addEventListener('scroll', () => {
+    const sectionStatistik = document.querySelector('.statistik');
+    if (sectionStatistik) {
+      const posisi = sectionStatistik.getBoundingClientRect().top;
+      const tinggiLayar = window.innerHeight;
+
+      if (posisi < tinggiLayar && !animated) {
+        jalankanCounter();
+        animated = true;
+      }
+    }
+  });
 
 
 
