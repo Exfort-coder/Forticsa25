@@ -61,7 +61,62 @@ body.gelap .card { background-color: #1c2538; border-color: #33415c; }
 
 
 /* ==== Area Kerja Mba Lia (Anggota) dibawah ini ==== */
+.halaman-anggota { padding: 24px 5%; }
+.anggota-header { text-align: center; margin-bottom: 24px; }
+.anggota-header input {
+    margin-top: 12px; padding: 10px 14px; width: min(100%, 360px);
+    border: 1px solid #aaa; border-radius: 10px; font-size: 1rem;
+}
 
+.grid-anggota {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 18px;
+}
+.kartu-anggota {
+    display: flex; flex-direction: column; align-items: center; gap: 8px;
+    padding: 16px; border: 1px solid #ccc; border-radius: 12px;
+    background: inherit; color: inherit; font: inherit; cursor: pointer;
+    transition: transform .2s, box-shadow .2s;
+}
+.kartu-anggota:hover, .kartu-anggota:focus-visible {
+    transform: translateY(-4px); box-shadow: 0 6px 16px rgba(0,0,0,.2);
+}
+.kartu-anggota img {
+    width: 110px; height: 110px; object-fit: cover; border-radius: 50%;
+    background: #ddd;
+}
+.kartu-anggota strong { text-align: center; }
+.kartu-anggota span { font-size: .85rem; opacity: .75; }
+.anggota-kosong { text-align: center; }
+
+.modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,.6);
+    display: flex; align-items: center; justify-content: center;
+    padding: 16px; z-index: 1000;
+}
+.modal[hidden] { display: none; }
+.modal-isi {
+    position: relative; width: min(100%, 420px); max-height: 90vh; overflow-y: auto;
+    padding: 24px; border-radius: 14px; text-align: center;
+    background: #fff; color: #222;
+}
+body.dark .modal-isi, body.dark-mode .modal-isi { background: #222; color: #eee; }
+.modal-tutup {
+    position: absolute; top: 8px; right: 12px; border: 0; background: none;
+    font-size: 1.8rem; cursor: pointer; color: inherit;
+}
+.modal-foto {
+    width: 150px; height: 150px; object-fit: cover; border-radius: 50%;
+    margin-bottom: 10px; background: #ddd;
+}
+.modal-jabatan { opacity: .75; margin-bottom: 12px; }
+.modal-detail {
+    display: grid; grid-template-columns: auto 1fr; gap: 6px 12px;
+    text-align: left; margin: 12px 0;
+}
+.modal-detail dt { font-weight: bold; }
+.modal-bio { font-size: .95rem; }
 
 
 

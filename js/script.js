@@ -166,74 +166,60 @@ const dataAnggota = [
         foto: "image/wynne.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "KARFU'AN HUSNI AGUS RIADY",
+        jabatan: "Anggota",
+        nim: "250102018",
+        asal: "-",
+        foto: "image/fuan.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "LUSSY ANA SYARIF",
+        jabatan: "Anggota",
+        nim: "250202019	",
+        asal: "Maos",
+        foto: "image/lussy.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "MEI ANDRIANI",
+        jabatan: "Anggota",
+        nim: "250202020",
+        asal: "-",
+        foto: "image/mei.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "NELLA AULIA PUTRI",
+        jabatan: "Anggota",
+        nim: "250202024",
+        asal: "-",
+        foto: "image/nella.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "QUEEN FRESHTYANA",
+        jabatan: "Anggota",
+        nim: "250102026",
+        asal: "-",
+        foto: "image/queen.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "SHERLY NATHANIA CHRISTIEN",
+        jabatan: "Anggota",
+        nim: "250102029",
+        asal: "-",
+        foto: "image/sherly.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        nama: "TRI CAHYO SAKTI AJI",
+        jabatan: "Anggota",
+        nim: "250302030",
+        asal: "-",
+        foto: "image/aji.JPG"
     },
     {
-        nama: "",
-        jabatan: "",
-        nim: "",
+        nama: "WULAN SUCI CAHYANI",
+        jabatan: "Anggota",
+        nim: "250302031",
         asal: "",
-        foto: ""
-    },
-    {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
-    },
-    {
-        nama: "",
-        jabatan: "",
-        nim: "",
-        asal: "",
-        foto: ""
+        foto: "image/wulan.JPG"
     },
 ];
 
@@ -288,9 +274,7 @@ const dataAnggota = [
         document.getElementById("modal-jabatan").textContent = a.jabatan;
         document.getElementById("modal-nim").textContent = a.nim;
         document.getElementById("modal-asal").textContent = a.asal;
-        document.getElementById("modal-hobi").textContent = a.hobi;
-        document.getElementById("modal-ig").textContent = a.instagram;
-        document.getElementById("modal-bio").textContent = a.bio;
+        
         modal.hidden = false;
         document.getElementById("modal-tutup").focus();
     }
