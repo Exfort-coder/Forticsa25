@@ -1,35 +1,84 @@
 <!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda | Forticsa TI 2A</title>
-    <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-    <!-- Navbar -->
-    <header class="navbar">
-        <h1 class="logo">Forticsa TI 2A</h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="beranda.html">Beranda</a></li>
-                <li><a href="anggota.html">Anggota</a></li>
-                <li><a href="kegiatan.html">Kegiatan</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
-        <button id="tombol-tema" type="button">Mode Gelap</button>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Beranda | Forticsa TI 2A</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="buat-logo">
+                <img src="image/forticsa.jpg" alt="Logo Forticsa" class="logo">
+                <span class="teks-logo">Forticsa</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li><a href="beranda.html">Beranda</a></li>
+                    <li><a href="anggota.html">Anggota</a></li>
+                    <li><a href="kegiatan.html">Kegiatan</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+            <button id="tombol-tema" type="button">Mode Gelap</button>
+        </header>
 
-    <!-- Konten Utama: Beranda -->
-    <main>
-        <!-- Area kerja Mas Igo-->
-    </main>
+        <div class="foto">
+            <img src="image/fotokls.jpg" alt="Foto forticsa" class="foto-header">
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2026 Forticsa - Teknik Informatika 2A Politeknik Negeri Cilacap</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
+        <!-- Konten Utama: Beranda -->
+        <main>
+            <!-- Area kerja Mas Igo-->
+
+            <!-- Jargon dan Sambutan ala forticsa -->
+            <header class="sambutan">
+                <div class="jargon">
+                    <h1>Selamat Datang di Forticsa</h1>
+                    <p>Vibe Your Code</p>
+                    <a href="kegiatan.html" class="jelajahi-kegiatan">Jelajahi
+                        Kegiatan</a>
+                </div>
+            </header>
+
+            <!-- Tentang Forticsa -->
+            <section class="tentang">
+                <h2>Tentang Forticsa</h2>
+                <p>Mahasiswa Politeknik Negeri Cilacap Jurusan Komputer dan
+                    Bisnis Program Studi Teknik Informatika kelas 2A angkatan
+                    2025 sebagai calon Developer dan Engineer. Forticsa
+                    mempelajari Web Development, UI/UX, Mobile Development, dan
+                    Networking dengan gelar A.md.T.</p>
+            </section>
+
+            <!-- Statistik singkat -->
+            <section class="statistik">
+                <h2>Statistik Forticsa</h2>
+                <div class="statistik-flex">
+                    <div class="statistik-card">
+                        <h3>29</h3>
+                        <p>Mahasiswa</p>
+                    </div>
+
+                    <div class="statistik-card">
+                        <h3>1</h3>
+                        <p>Wali Dosen</p>
+                    </div>
+
+                    <div class="statistik-card">
+                        <h3>10+</h3>
+                        <p>Kegiatan Kelas</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Forticsa - Teknik Informatika 2A Politeknik Negeri
+                Cilacap</p>
+        </footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>

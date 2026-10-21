@@ -1,202 +1,374 @@
 /* ===== BAGIAN UMUM (Dikelola PM) ===== */
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    font-family: Arial, sans-serif;
-    color: #222;
-    background-color: #f4f6fb;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f4f6fb;
+  line-height: 1.6;
 }
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 16px 32px;
-    background-color: #1f3864;
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background-color: #017bff;
+  color: white;
 }
-.logo { font-size: 22px; }
-.menu { display: flex; gap: 24px; list-style: none; }
-.menu a { color: white; text-decoration: none; }
-.menu a:hover { text-decoration: underline; }
+
+.buat-logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.teks-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
 #tombol-tema {
-    padding: 8px 14px;
-    border: none;
-    border-radius: 6px;
-    background-color: white;
-    color: #1f3864;
-    cursor: pointer;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+  color: #1f3864;
+  cursor: pointer;
 }
-main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; min-height: 60vh; }
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  min-height: 60vh;
+}
 .grid-card {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
 }
 .card {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
 }
 footer {
-    padding: 20px 32px;
-    text-align: center;
-    background-color: #1f3864;
-    color: white;
+  padding: 20px 32px;
+  text-align: center;
+  background-color: #017bff;
+  color: white;
 }
-body.gelap { background-color: #121826; color: #e8e8e8; }
-body.gelap .card { background-color: #1c2538; border-color: #33415c; }
+body.gelap {
+  background-color: #121826;
+  color: #e8e8e8;
+}
+body.gelap .card {
+  background-color: #1c2538;
+  border-color: #33415c;
+}
 
 @media (max-width: 600px) {
-    .navbar { flex-direction: column; }
-    .menu { gap: 14px; }
+  .navbar {
+    flex-direction: column;
+  }
+  .menu {
+    gap: 14px;
+  }
 }
 
 /* ==== Area Kerja Mas Igo (Beranda dan Kegiatan) dibawah ini ==== */
+.sambutan {
+  text-align: center;
+  padding: 20px 20px 40px 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e8f0;
+}
 
+/* Foto Penuh */
+.foto {
+  width: 100%;
+  max-height: 420px;
+  overflow: hidden;
+}
 
+.foto-header {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  object-position: center bottom;
+  filter: brightness(0.7) contrast(1.1); /*Bikin foto sedikit agak gelap biar teks jelas*/
+}
 
+.jargon {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: 0 16px;
+}
+
+.jargon h1 {
+  font-size: 40px;
+  color: #0f172a;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.jargon p {
+  font-size: 18px;
+  color: #475569;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 24px;
+}
+
+.jelajahi-kegiatan {
+  display: inline-block;
+  background-color: #017bff;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.jelajahi-kegiatan:hover {
+  background-color: #2674c6;
+}
+
+/* TENTANG */
+.tentang {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 24px;
+  text-align: center;
+}
+
+.tentang h2,
+.statistik h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #0f172a;
+}
+
+.statistik {
+  background-color: #ebebeb;
+  padding: 60px 24px;
+  text-align: center;
+}
+
+.statistik-flex {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}
+
+.statistik-card {
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 32px;
+  min-width: 180px;
+}
+
+.statistik-card h3 {
+  font-size: 40px;
+  color: #0284c7;
+}
+
+/* Dark Mde */
+body.gelap .sambutan {
+  background-color: #1c2538;
+  border-color: #33415c;
+}
+
+body.gelap .jargon h1,
+body.gelap .tentang h2,
+body.gelap .statistik h2 {
+  color: #ffffff;
+}
+
+body.gelap .jargon p {
+  color: #cbd5e1;
+}
+
+body.gelap .statistik {
+  background-color: #1c2538;
+}
+
+body.gelap .statistik-card {
+  background-color: #121826;
+  border-color: #33415c;
+  color: #e8e8e8;
+}
+
+body.gelap .statistik-card h3 {
+  color: #38bdf8;
+}
 
 /* ==== Area Kerja Mba Qiqi (Anggota) dibawah ini ==== */
 
-
-
-
 /* ==== Area Kerja Mas Rizky (Kontak) dibwah ini ==== */
 .kontak-container {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .kontak-header {
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .kontak-header h2 {
-    font-size: 2rem;
-    margin-bottom: 8px;
+  font-size: 2rem;
+  margin-bottom: 8px;
 }
 
 .kontak-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 30px;
 }
 
 @media (max-width: 768px) {
-    .kontak-wrapper {
-        grid-template-columns: 1fr;
-    }
+  .kontak-wrapper {
+    grid-template-columns: 1fr;
+  }
 }
 
-.kontak-info, .kontak-form {
-    background-color: white;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 24px;
+.kontak-info,
+.kontak-form {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 24px;
 }
 
-.kontak-info h3, .kontak-form h3 {
-    margin-bottom: 16px;
-    font-size: 1.2rem;
+.kontak-info h3,
+.kontak-form h3 {
+  margin-bottom: 16px;
+  font-size: 1.2rem;
 }
 
 .info-list {
-    list-style: none;
-    margin-top: 16px;
+  list-style: none;
+  margin-top: 16px;
 }
 
 .info-list li {
-    margin-bottom: 14px;
-    font-size: 0.95rem;
+  margin-bottom: 14px;
+  font-size: 0.95rem;
 }
 
 /* Form Styling */
 .form-group {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-size: 0.9rem;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .form-group input,
 .form-group textarea {
-    width: 100%;
-    padding: 10px 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 0.95rem;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #222;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #222;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    outline: none;
-    border-color: #1f3864;
+  outline: none;
+  border-color: #1f3864;
 }
 
 .btn-kirim {
-    width: 100%;
-    padding: 12px;
-    background-color: #1f3864;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.2s;
+  width: 100%;
+  padding: 12px;
+  background-color: #1f3864;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
 }
 
 .btn-kirim:hover {
-    background-color: #152748;
+  background-color: #152748;
 }
 
 .notifikasi {
-    margin-top: 12px;
-    text-align: center;
-    font-size: 0.9rem;
-    font-weight: bold;
+  margin-top: 12px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .notifikasi.sukses {
-    color: #2e7d32;
+  color: #2e7d32;
 }
 
 /* Penyesuaian Mode Gelap untuk Kontak */
-body.gelap .kontak-info, 
+body.gelap .kontak-info,
 body.gelap .kontak-form {
-    background-color: #1c2538;
-    border-color: #33415c;
-    color: #e8e8e8;
+  background-color: #1c2538;
+  border-color: #33415c;
+  color: #e8e8e8;
 }
 
 body.gelap .form-group input,
 body.gelap .form-group textarea {
-    background-color: #121826;
-    border-color: #33415c;
-    color: #e8e8e8;
+  background-color: #121826;
+  border-color: #33415c;
+  color: #e8e8e8;
 }
 
 body.gelap .btn-kirim {
-    background-color: #33415c;
+  background-color: #33415c;
 }
 
 body.gelap .btn-kirim:hover {
-    background-color: #475569;
+  background-color: #475569;
 }
 
 body.gelap .notifikasi.sukses {
-    color: #4ade80;
+  color: #4ade80;
 }
