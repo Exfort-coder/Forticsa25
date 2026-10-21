@@ -22,8 +22,32 @@
     </header>
 
     <!-- Konten Utama: Anggota -->
-    <main>
+    <main class="halaman-anggota">
         <!-- Area kerja Mba Qiqi-->
+    <section class="anggota-header">
+        <h2>Daftar Anggota</h2>
+        <p>Klik salah satu kartu untuk melihat detail anggota.</p>
+        <input type="search" id="cari-anggota" placeholder="Cari nama anggota..." aria-label="Cari anggota" />
+    </section>
+
+    <section id="daftar-anggota" class="grid-anggota"></section>
+    <p id="anggota-kosong" class="anggota-kosong" hidden>Anggota tidak ditemukan.</p>
+
+    <div id="modal-anggota" class="modal" hidden>
+        <div class="modal-isi" role="dialog" aria-modal="true" aria-labelledby="modal-nama">
+            <button type="button" id="modal-tutup" class="modal-tutup" aria-label="Tutup">&times;</button>
+            <img id="modal-foto" class="modal-foto" src="" alt="" />
+            <h3 id="modal-nama"></h3>
+            <p id="modal-jabatan" class="modal-jabatan"></p>
+            <dl class="modal-detail">
+                <dt>NIM</dt><dd id="modal-nim"></dd>
+                <dt>Asal</dt><dd id="modal-asal"></dd>
+                <dt>Hobi</dt><dd id="modal-hobi"></dd>
+                <dt>Instagram</dt><dd id="modal-ig"></dd>
+            </dl>
+            <p id="modal-bio" class="modal-bio"></p>
+        </div>
+    </div>
     </main>
 
     <!-- Footer -->
