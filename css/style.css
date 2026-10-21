@@ -5,6 +5,7 @@ body {
     color: #222;
     background-color: #f4f6fb;
     line-height: 1.6;
+    min-height: 100vh;
 }
 .navbar {
     display: flex;
@@ -16,7 +17,23 @@ body {
     background-color: #1f3864;
     color: white;
 }
-.logo { font-size: 22px; }
+.logo { 
+    display: flex;
+    align-items: center; 
+    gap: 12px;          
+    text-decoration: none;
+    color: white;        
+    font-size: 22px;     
+    font-weight: bold;
+ }
+
+ .logo img {
+    height: 45px;        
+    width: 45px;         
+    object-fit: cover;
+    border-radius: 50%;  
+    border: 2px solid white;
+}
 .menu { display: flex; gap: 24px; list-style: none; }
 .menu a { color: white; text-decoration: none; }
 .menu a:hover { text-decoration: underline; }
@@ -28,7 +45,7 @@ body {
     color: #1f3864;
     cursor: pointer;
 }
-main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; min-height: 60vh; }
+main { max-width: 1000px; margin: 0 auto; padding: 32px 20px; min-height: 60vh; flex: 1;}
 .grid-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
