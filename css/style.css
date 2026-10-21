@@ -131,7 +131,6 @@ body.gelap .card {
   height: 100%;
   object-fit: cover;
   display: block;
-  object-position: center bottom;
   filter: brightness(0.7) contrast(1.1); /*Bikin foto sedikit agak gelap biar teks jelas*/
 }
 
