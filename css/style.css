@@ -60,12 +60,12 @@ body.gelap .card { background-color: #1c2538; border-color: #33415c; }
 
 
 
-/* ==== Area Kerja Mba Qiqi (Anggota) dibawah ini ==== */
+/* ==== Area Kerja Mba Lia (Anggota) dibawah ini ==== */
 .halaman-anggota { padding: 24px 5%; }
 .anggota-header { text-align: center; margin-bottom: 24px; }
 .anggota-header input {
     margin-top: 12px; padding: 10px 14px; width: min(100%, 360px);
-    border: 1px solid #aaa; border-radius: 8px; font-size: 1rem;
+    border: 1px solid #aaa; border-radius: 10px; font-size: 1rem;
 }
 
 .grid-anggota {
