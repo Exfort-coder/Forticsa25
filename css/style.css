@@ -242,7 +242,6 @@ body.gelap .statistik-card h3 {
   color: #38bdf8;
 }
 
-<<<<<<< HEAD
 /* KEGIATANN */
 .kegiatan {
   padding: 10px 0;
@@ -349,9 +348,6 @@ body.gelap .card-kegiatan:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
-/* ==== Area Kerja Mba Qiqi (Anggota) dibawah ini ==== */
-=======
-
 /* ==== Area Kerja Mba Lia (Anggota) dibawah ini ==== */
 .halaman-anggota { padding: 24px 5%; }
 .anggota-header { text-align: center; margin-bottom: 24px; }
@@ -409,7 +405,6 @@ body.dark .modal-isi, body.dark-mode .modal-isi { background: #222; color: #eee;
 }
 .modal-detail dt { font-weight: bold; }
 .modal-bio { font-size: .95rem; }
->>>>>>> 5ef8f22c35cf92164f2889194cda7e77935a5173
 
 /* ==== Area Kerja Mas Rizky (Kontak) dibwah ini ==== */
 .kontak-container {
