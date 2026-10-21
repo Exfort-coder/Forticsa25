@@ -232,6 +232,112 @@ body.gelap .statistik-card h3 {
   color: #38bdf8;
 }
 
+/* KEGIATANN */
+.kegiatan {
+  padding: 10px 0;
+}
+
+.judul-kegiatan {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+/* grid layout responsive */
+.grid-kegiatan {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+}
+
+/* Card */
+.card-kegiatan {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  /* overflow: hidden; */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-kegiatan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgb(0, 0, 0, 0.1);
+}
+
+.card-kegiatan img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /*biar g gepeng*/
+}
+
+.card-isi {
+  padding: 20px;
+  flex-grow: 1; /*tinggi sm rata*/
+}
+
+.card-isi h3 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.card-isi p {
+  color: #475569;
+  font-size: 15px;
+}
+
+/* menyembunyikan elemen */
+.hidden {
+  display: none !important;
+}
+
+/* tombol lebih banyak */
+.tombol {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.lebih-banyak {
+  background-color: #017bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transform: background-color 0.3s;
+}
+
+.lebih-banyak:hover {
+  background-color: #0056b3;
+}
+
+/* dark mod */
+body.gelap .judul-kegiatan {
+  color: #ffffff;
+}
+
+body.gelap .card-kegiatan{
+  background-color: #1c2538;
+  border-color: #33415c;
+}
+
+body.gelp .card-isi h3 {
+  color: #e2e8f0;
+}
+
+body.gelap .card-isi p {
+  color: #cbd5e1;
+}
+
+body.gelap .card-kegiatan:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
 /* ==== Area Kerja Mba Qiqi (Anggota) dibawah ini ==== */
 
 /* ==== Area Kerja Mas Rizky (Kontak) dibwah ini ==== */
