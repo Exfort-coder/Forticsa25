@@ -387,7 +387,7 @@ body.dark .modal-isi, body.dark-mode .modal-isi { background: #222; color: #eee;
 .btn-kirim {
   width: 100%;
   padding: 12px;
-  background-color: #1f3864;
+  background-color: #017bff;
   color: white;
   border: none;
   border-radius: 6px;
@@ -398,7 +398,7 @@ body.dark .modal-isi, body.dark-mode .modal-isi { background: #222; color: #eee;
 }
 
 .btn-kirim:hover {
-  background-color: #152748;
+  background-color: #0664c8;
 }
 
 .notifikasi {
